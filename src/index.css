@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
+  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,74 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.menu{
+  height: 90%;
+}
+
+
+.mySwiper{
+    height: 38%;
+ }
+ .swiper {
+  /* width: 100%; */
+  /* height: 100%; */
+}
+
+.swiper-button-prev {
+  background-image: url("assets/logo.png") !important;
+}
+
+.swiper-button-next {
+  background-image:  url("assets/logo.png") !important;
+}
+
+
+.swiper-button-next::after,
+          .swiper-button-prev::after {
+            content: "";
+          }
+
+
+.createPost{
+  width: 95%;
+  height: 22%;
+}
+
+/* newswfeed */
+.textHome{
+  height: 5%;
+}
+
+.newsfeedContent{
+  height: 93.5%;
+
+}
+
+.MuiButtonBase-root{
+  padding: 0 !important;
+  
+
+}
+
+.MuiAccordionSummary-expandIconWrapper{
+  margin-left: 2rem !important;
+}
+.MuiPaper-root{
+  box-shadow: none !important;
+}
+
+
+.MuiAccordionDetails-root{
+  padding: 0 !important;
+}
+
+.electionSubmissionHead{
+  height: 8%;
+}
+
+.electionSubmissionBody{
+  height: 90%;
 }
