@@ -33,22 +33,4 @@ export default function Router() {
   ]);
 }
 
-//   { path: "settings", element: <Settings /> },
-//   { path: "group", element: <GroupPage /> },
-//   { path: "call", element: <CallPage /> },
-//   { path: "profile", element: <ProfilePage /> },
-//   { path: "404", element: <Page404 /> },
-//   { path: "*", element: <Navigate to="/404" replace /> },
 
-//   {
-//     path: "/auth",
-//     element: <MainLayout />,
-//     children: [
-//       { element: <LoginPage />, path: "login" },
-//       { element: <RegisterPage />, path: "register" },
-//       { element: <ResetPasswordPage />, path: "reset-password" },
-//       { element: <NewPasswordPage />, path: "new-password" },
-//       { element: <VerifyPage />, path: "verify" },
-
-//     ],
-//   },
