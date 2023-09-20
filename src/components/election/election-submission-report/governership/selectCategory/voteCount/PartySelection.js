@@ -24,7 +24,7 @@ const IncidentType = [
   "Fighten",
 ];
 
-const CategoryDialog = (props) => {
+const SelectPartyDialog = (props) => {
   const { onClose, selectedValue, open } = props;
 
   const handleClose = () => {
@@ -36,10 +36,21 @@ const CategoryDialog = (props) => {
   };
 
   return (
-    <Dialog onClose={handleClose} open={open} sx={{}}>
-      <div className="flex flex-row justify-between border border-black p-5">
+    <Dialog
+      onClose={handleClose}
+      open={open}
+      sx={{
+        height: "22rem",
+        position: "absolute",
+        top: "auto",
+        left: "auto",
+        marginRight: "12rem",
+        
+      }}
+    >
+      <div className="flex flex-row justify-between  ">
         <div className="flex flex-row text-center  ">
-          <div className="w-full flex flex-col items-center p-6 ">
+          <div className="w-full flex flex-col items-center ">
             <DialogTitle sx={{ color: "blue" }}>Results Sheet</DialogTitle>
 
             <List sx={{ pt: 0 }}>
@@ -64,39 +75,10 @@ const CategoryDialog = (props) => {
               ))}
             </List>
           </div>
-          <Divider
-            orientation="vertical"
-            sx={{ borderLeftWidth: 1, borderLeftColor: "black" }}
-          />
-        </div>
-        <div className="flex flex-col text-center  items-center p-6">
-          <DialogTitle sx={{ color: "blue" }}>Incident Type</DialogTitle>
-
-          <List sx={{ pt: 0 }}>
-            {IncidentType.map((incidentType) => (
-              <ListItem disableGutters key={incidentType}>
-                <ListItemButton
-                  onClick={() => handleListItemClick(incidentType)}
-                  sx={{ textAlign: "center" }}
-                >
-                  <ListItemText
-                    primary={incidentType}
-                    sx={{
-                      padding: "0.5rem",
-                      paddingLeft: "1rem",
-                      paddingRight: "1rem",
-                      backgroundColor: "lightgrey",
-                      borderRadius: "1rem",
-                    }}
-                  />
-                </ListItemButton>
-              </ListItem>
-            ))}
-          </List>
         </div>
       </div>
     </Dialog>
   );
 };
 
-export default CategoryDialog;
+export default SelectPartyDialog;
